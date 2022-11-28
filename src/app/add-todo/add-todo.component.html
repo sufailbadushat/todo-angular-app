@@ -10,23 +10,23 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">UserId</label>
-                    <input type="text" placeholder="userid" class="form-control">
+                    <input name="userId" [(ngModel)]="userId" type="text" placeholder="userid" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Id</label>
-                    <input type="text" placeholder="id" class="form-control">
+                    <input name="id" [(ngModel)]="id" type="text" placeholder="id" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label font-monospace">Title</label>
-                    <input type="text" placeholder="title" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" placeholder="title" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Completed</label>
-                    <input type="text" placeholder="completed status" class="form-control">
+                    <input name="completed" [(ngModel)]="completed" type="text" placeholder="completed status" class="form-control">
                 </div>
               
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-danger font-monospace">Submit</button>
+                    <button (click)="readValues()" class="btn btn-danger font-monospace">Submit</button>
                 </div>
             </div>
         </div>
